@@ -20,8 +20,16 @@ public class BunTest {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"Вадим", 78.0F},
-                {"Марина", 798.7F}
+                {"black bun", 100},
+                {"white bun", 200},
+                {"", 200},
+                {null, 200},
+                {"white bun", 0},
+                {"white bun", -79},
+                {"white bun", 7978764},
+                {"white bunwhite bunwhite bunwhite bunwhite bunwhite bun", 90},
+                {"y", 900},
+                {"white bun", 1}
         });
     }
 
